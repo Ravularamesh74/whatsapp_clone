@@ -1,0 +1,226 @@
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.search-button:hover {
+  opacity: 0.8;
+}
+
+.settings-content {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.status-text {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #999;
+}
+
+.profile-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Settings Menu */
+.settings-menu {
+  background: white;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.settings-item:hover {
+  background-color: #f9f9f9;
+}
+
+.settings-icon {
+  font-size: 24px;
+  margin-right: 16px;
+  width: 40px;
+  text-align: center;
+}
+
+.settings-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.settings-text h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+
+.settings-text p {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #ccc;
+  margin-left: 12px;
+}
+
+/* Logout Section */
+.logout-section {
+  padding: 16px;
+  text-align: center;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.logout-button:hover {
+  transform: translateY(-2px);
+}
+
+.logout-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .settings-header {
+    padding: 12px 12px;
+  }
+
+  .profile-section {
+    padding: 16px 12px;
+  }
+
+  .settings-item {
+    padding: 12px;
+  }
+
+  .profile-avatar {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+  }
+
+  .settings-icon {
+    font-size: 20px;
+    width: 32px;
+  }
+
+  .settings-text h3 {
+    font-size: 13px;
+  }
+
+  .settings-text p {
+    font-size: 11px;
+  }
+}

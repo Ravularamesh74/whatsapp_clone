@@ -1,0 +1,118 @@
+.calls-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.calls-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  background: #f5f5f5;
+}
+
+.calls-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.calls-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.call-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.call-item:hover {
+  background-color: #f9f9f9;
+}
+
+.call-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.call-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.call-info h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.call-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.call-type {
+  color: #667eea;
+  font-weight: 500;
+}
+
+.call-type.incoming {
+  color: #31a24c;
+}
+
+.call-time {
+  color: #999;
+}
+
+.call-duration {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.call-action {
+  margin-left: 10px;
+}
+
+.call-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.call-button:hover {
+  transform: scale(1.1);
+}
+
+.loading,
+.no-calls {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-size: 14px;
+}
